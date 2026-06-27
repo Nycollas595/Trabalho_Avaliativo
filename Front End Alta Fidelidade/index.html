@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta de Ônibus</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>🚌 Consulta de Ônibus</h1>
+
+    <label for="linha">Digite o número da linha</label>
+
+    <input type="text" id="linha" placeholder="Ex.: 122, 001, 040EX1">
+
+    <button onclick="consultarLinha()">Consultar Linha</button>
+
+    <div class="resultado" id="resultado">
+        <h3>Linha: 122</h3>
+        <p><strong>Itinerário:</strong> Via Barueri (Petrobras) e Osasco (Vila Yara)</p>
+        <p><strong>Tarifa:</strong> R$ 6,45</p>
+        <p><strong>Empresa:</strong> Anhanguera</p>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
