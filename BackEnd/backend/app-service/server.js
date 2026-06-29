@@ -1,0 +1,1 @@
+const express=require('express');const sqlite3=require('sqlite3').verbose();const app=express();const db=new sqlite3.Database('../Banco_de_Dados.db');app.get('/linhas',(req,res)=>db.all('SELECT * FROM linhas',[],(e,r)=>res.json(r)));app.listen(3002);

@@ -1,0 +1,1 @@
+const express=require('express');const app=express();app.use(express.json());app.post('/auth/login',(req,res)=>res.json({token:'JWT_TOKEN_EXEMPLO'}));app.listen(3001);
